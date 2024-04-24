@@ -152,184 +152,220 @@ img {
   margin-bottom: 2rem;
 }
 
-.entrada:last-of-type{
-    border-bottom: none;
-    margin-bottom: 0;
+.entrada:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
-.boton{
-    display: block;
-    font-family: var(--fuenteHeading);
-    text-align: center;
-    padding: 1rem 3rem;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    border: none;
+.boton {
+  display: block;
+  font-family: var(--fuenteHeading);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border: none;
 }
 
-.boton:hover{
-    cursor: pointer;
+.boton:hover {
+  cursor: pointer;
 }
 
-@media (min-width:768px ) {
-    .boton{
-        /* margin inline inmune a margin y width  */
-        /* display: inline; */
+@media (min-width: 768px) {
+  .boton {
+    /* margin inline inmune a margin y width  */
+    /* display: inline; */
 
-        /* inline block tambien, pero respeta el margin ya colocado */
-        display: inline-block;
-    }
+    /* inline block tambien, pero respeta el margin ya colocado */
+    display: inline-block;
+  }
 }
 
-.boton--primario{
-    background-color: var(--negro);
-    color: var(--blanco);
+.boton--primario {
+  background-color: var(--negro);
+  color: var(--blanco);
 }
 
-.boton--secundario{
-    background-color: var(--primario);
-    color: var(--blanco);
+.boton--secundario {
+  background-color: var(--primario);
+  color: var(--blanco);
 }
 
-.cursos{
-    list-style: none;
+.cursos {
+  list-style: none;
 }
 
 .widget-curso {
-    border-bottom: 1px solid var(--gris);
-    margin-bottom: 2rem;
+  border-bottom: 1px solid var(--gris);
+  margin-bottom: 2rem;
 }
 
-.widget-curso__label{
-    font-family: var(--fuenteHeading);
-    font-weight: bold;
+.widget-curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
 }
 
-.widget-curso__info{
-    font-weight: normal;
+.widget-curso__info {
+  font-weight: normal;
 }
-
 
 .widget-curso__info,
-.widget-curso__label{
-    font-weight: 2rem;
+.widget-curso__label {
+  font-weight: 2rem;
 }
-
 
 @media (min-width: 768px) {
-    
-    footer{
-        display: flex;
-        color: var(--blanco);
-        height: 15rem;
-        background-color: var(--negro);
-        justify-content: space-around;
-        align-items: center;
-        /* margin: 0 auto; */
-    }
-    
+  footer {
+    display: flex;
+    color: var(--blanco);
+    height: 15rem;
+    background-color: var(--negro);
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0 auto; */
+  }
 }
 
-footer{
-    background-color: var(--negro);
-    color: var(--blanco);
-    
+footer {
+  background-color: var(--negro);
+  color: var(--blanco);
 }
 
 footer .logo {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* SOBRE NOSOTROS  */
 
-@media (min-width:768px ) {
-    
-    .sobre-nosotros{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        margin-bottom: 20rem;
-    }
-    .sobre-nosotros__texto{
-        text-align: start;
-    }
+@media (min-width: 768px) {
+  .sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 20rem;
+  }
+  .sobre-nosotros__texto {
+    text-align: start;
+  }
 }
 /* .sobre-nosotros__imagen{} */
 
 /* CURSOS  */
 
-
 .curso {
-
-    border-bottom: 1px solid var(--gris);
-    padding: 3rem 0;
+  border-bottom: 1px solid var(--gris);
+  padding: 3rem 0;
 }
 
 @media (min-width: 768px) {
-    .curso{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-    }
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
 }
 
-.curso:last-of-type{
-    border-bottom: none;
+.curso:last-of-type {
+  border-bottom: none;
 }
 
-
-
-.curso__label{
-    font-family: var(--fuenteHeading);
-    font-weight: bold;
+.curso__label {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
 }
 
-.curso__info{
-    font-weight: normal;
+.curso__info {
+  font-weight: normal;
 }
-
 
 .curso__info,
-.curso__label{
-    font-weight: 2rem;
+.curso__label {
+  font-weight: 2rem;
 }
-
 
 /* CONTACTO  */
 
-.contacto-bg{
-    background-image: url(/img/contacto.jpg);
-    height: 40rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.contacto-bg {
+  background-image: url(/img/contacto.jpg);
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* FORMULARIO  */
-.formulario{
-    background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
-    width: 95%;
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -10rem auto 0 auto;
+  width: 95%;
+  /* margin-top: 1rem;  */
+}
+@media (min-width: 768px) {
+  .formulario {
+    /* background-color: red; */
     padding: 5rem;
+    margin: -8rem auto 0 auto;
+  }
 }
 
-.campo{
-    display: flex;
-    margin-bottom: 2rem;
-    gap: 2rem;
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  gap: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
-.campo__label{
+.campo__label {
+  text-align: left;
+  flex: 0 0 6rem;
+}
+.campo__field {
+  flex: 1;
+  border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+  height: 15rem;
+}
+
+@media (min-width: 768px) {
+  .campo__label {
     text-align: right;
     flex: 0 0 9rem;
-}
-.campo__field{
+  }
+  .campo__field {
     flex: 1;
     border: 1px solid var(--gris);
-}
-
-
-.campo__field--textarea{
+  }
+  .campo__field--textarea {
     height: 20rem;
+  }
 }
+
+
+.boton__input {
+  display: block;
+  font-family: var(--fuenteHeading);
+  text-align: center;
+    padding: 1rem 3rem;
+
+  
+  width: 100%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+  @media (min-width: 768px) {
+   .boton__input{
+    display: inline-block;
+    padding: 1rem 3rem;
+    width: 13%;
+   }   
+  }
